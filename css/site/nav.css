@@ -1,0 +1,72 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.navbar-brand img {
+  -webkit-filter:  brightness(0) invert(1); /* Safari 6.0 - 9.0 */
+    filter:  brightness(0) invert(1);
+}
+
+.nav-transparent {
+  background-color: transparent !important;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.nav-transparent img {
+  -webkit-filter:  brightness(0) invert(1); /* Safari 6.0 - 9.0 */
+  filter:  brightness(0) invert(1);
+}
+
+.nav-transparent img:hover {
+  -webkit-filter:  brightness(1) invert(0.1); /* Safari 6.0 - 9.0 */
+  filter:  brightness(1) invert(0.1);
+}
+
+.nav-transparent-invert {
+  background-color: rgba(255, 255, 255, 1);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.nav-transparent-invert img {
+  -webkit-filter:  brightness(1) invert(0.5) !important; /* Safari 6.0 - 9.0 */
+    filter:  brightness(1) invert(0.5) !important;
+}
+
+.nav-transparent-invert img:hover {
+  -webkit-filter:  brightness(1) invert(0.1) !important; /* Safari 6.0 - 9.0 */
+    filter:  brightness(1) invert(0.1) !important;
+}
+
+.nav-transparent-invert a {
+  color: gray !important;
+}
+
+.nav-transparent-invert a:hover {
+  color: #46910c !important;
+}
+
+.nav-transparent a {
+  color: gray !important;
+}
+
+.nav-transparent a:hover {
+  color: #46910c !important;
+}
+
+.navbar-brand img:hover {
+    -webkit-transition : -webkit-filter 500ms linear;
+}
+
