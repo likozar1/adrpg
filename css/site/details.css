@@ -1,12 +1,25 @@
 .details-row {
     width: 100%;
     max-height: 350px;
+    margin-top: 77px;
     height: auto;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .details-image img {
-    max-height:100%; max-width:100%;
+    width:100%;
     filter: grayscale(100%);
 }
+
+@media (max-width: 62em) {
+    .details-row {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .details-image img {
+        width:200%;
+        filter: grayscale(100%);
+    }
+  }

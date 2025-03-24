@@ -10,7 +10,7 @@
 
 
 
-    <title>Adrenalinski Park</title>
+    <title>Pustolovski Park</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/slick.css" rel="stylesheet">
@@ -43,17 +43,34 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarText">
           <ul class="navbar-nav float-right">
             <li class="nav-item">
-                <a class="nav-link" href="#C1">O parku</a>
+              <a class="nav-link" href="#C1">O parku</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#C2">Ponudba</a>
+              <a class="nav-link" href="#C2">Ponudba</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#C3">Galerija</a>
+              <a class="nav-link" href="#C6">Plezalne poti</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#C4">Kako do nas</a>
+              <a class="nav-link" href="#C5">Odpiralni čas</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#C6">Cenik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#C4">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galerija</a>
+            </li>
+
+            <!-- Language Selector with Flag Icons -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index-en.html" aria-label="Switch to English">
+                <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-icon" style="width: 20px; height: auto;">
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -66,9 +83,8 @@
     ================================================== -->
     <div class="headline position-relative overflow-hidden p-3 p-md-5 text-center bg-light">
       <!-- Fullscreen Video Background -->
-      <video class="fullscreen-video" autoplay muted loop>
-        <source src="./assets/videos/Adrenaline Park Cluj-Napoca.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <video id="myVideo" class="fullscreen-video" playsinline playsInline autoplay autoPlay loop muted>
+        <source src="./assets/videos/adrenalin.mp4" type="video/mp4">
       </video>
 
       <!-- Overlay and Content -->
@@ -76,9 +92,9 @@
         <div class="video-content">
           <div class="panelCon">   
             <div class="title col-md-5 p-5 mx-auto my-5">
-                <h1 class="pink display-4 font-weight-normal">Zipline Park</h1>
-                <p class="lead font-weight-normal">Premagaj svoje meje, občuti vznemirjenje in uživaj v nepozabni avanturi – adrenalinski park te čaka!</p>
-                <a href="#more-info" class="btn btn-primary btn-custom">Learn More</a>
+                <h1 class="pink display-4 font-weight-normal">Pustolovski Park</h1>
+                <p class="lead font-weight-normal">Si želiš nepozabno doživetje v objemu narave? Dan poln pustolovščin, smeha in zabave v družbi prijateljev, družine ali sodelavcev?</p>
+                <a href="#more-info" class="btn btn-primary btn-custom">Zanima me</a>
               </div>
           </div>
         </div>
@@ -93,20 +109,22 @@
 
     <!-- Content
     ================================================== -->
-    <div id="C1" class="spacer"></div>
-    <div class="container marketing">  
+    <div id="C1" class="spacer blue"></div>
+    <div class="container marketing blue">  
 
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">O Parku</h1>
-            <p class="lead text-justify">Nov adrenalinski park v Postojni ponuja širok spekter aktivnosti, ki so primerne za vse starostne skupine. S svojo raznoliko ponudbo izzivov in avantur omogoča obiskovalcem, da se preizkusijo v različnih adrenalinskih športih, kot so plezanje, zip lini, gorsko kolesarjenje in številne druge adrenalinske dejavnosti. Park je zasnovan tako, da združuje zabavo in varnost ter omogoča tako začetnikom kot tudi izkušenim ljubiteljem adrenalina, da uživajo v svoji izkušnji.</p>
+            <p class="lead text-justify">Edinstven, prvinski in vznemirljiv sprehod med gozdnimi krošnjami kjer boste preizkušali svojo iznajdljivost, pustolovski duh in doživeli prav poseben dan. Vse mlade in mlade po srcu čaka gozdna avantura, ki jo sestavljajo mostovi, lestve, mreže, vrvi, žice … preko katerih se boste povzpeli ali pa kar zapeljali z ene dogodivščine na drugo. Z malce vzpodbude boste prav vsi ne glede na starost in telesno pripravljenost lahko premagali 78. različnih zabavnih preprek, ki se na velikem področju, namenjenemu aktivnemu preživljanju prostega časa, srečevanju, igranju in druženju nahajajo v neposredni bližini Postojnske jame..</p>
         </div>
     
         <hr class="featurette-divider">
     
         <div class="row featurette">
           <div class="col-md-10">
-            <h2 class="featurette-heading"><span class="pink">Aktivnosti za otroke in odrasle</span></h2>
-            <p class="lead text-justify">Za otroke je park opremljen s posebnimi progami in igrami, ki so prilagojene njihovim potrebam in sposobnostim, medtem ko so odrasli lahko izzvani s kompleksnejšimi nalogami in aktivnostmi, ki preizkušajo tako telesno kot mentalno pripravljenost. Vse aktivnosti so zasnovane tako, da zagotavljajo tako zabavo kot tudi varnost, s strokovno usposobljenimi inštruktorji, ki skrbijo za podporo in varnost obiskovalcev.</p>
+            <h2 class="featurette-heading"><span class="white">Kaj je pustolovski park?</span></h2>
+            <p class="lead text-justify">Pustolovski park Postojna je namenjen zabavi za vso družino. V parku se boste lahko iz tal dvignili med drevesne krošnje in se odpravili na pravo popotovanje med drevesi. Svet boste videli in doživeli iz druge perspektive.
+              <br><br>
+              Koncept pustolovskega parka temelji na doživljajskem popotovanju preko posebej urejenega plezalnega poligona, ki je zgrajen med krošnjami dreves in to tako, da si obiskovalci sami lahko izbirajo sebi primerno težavnostno stopnjo. Pustolovski park Postojna sestavlja 5 različnih avanturističnih poti s 78 različnimi plezalnimi elementi, ki ponujajo zanimivo in vznemirljivo pustolovščino. Plezalni park omogoča izvirno 2-3 urno zabavo. Vabljeni ste vsi, ki ste višji od 120 cm oziroma ste dopolnili vsaj 4.leta.</p>
           </div>
         </div>
     
@@ -114,11 +132,18 @@
     
         <div class="row featurette">
           <div class="col-md-10 order-md-2 text-right">
-            <h2 class="featurette-heading">Skupinske aktivnosti. <span class="pink">Poglej ponudbo.</span></h2>
-            <p class="lead text-justify">Poleg individualnih obiskov park ponuja tudi možnost organiziranja team building dogodkov in aktivnosti za večje skupine. Idealno je za podjetja, šole, društva in druge skupine, ki želijo preživeti dan v naravi, hkrati pa krepiti timsko sodelovanje in medsebojno zaupanje. Adrenalinski park v Postojni je torej popolna destinacija za vse, ki iščejo zabavo, izzive in priložnosti za povezovanje v vseh življenjskih obdobjih.</p>
+            <h2 class="featurette-heading">Zakaj preživeti dan v Pustolovskem parku?</span></h2>
+            <p class="lead text-justify">Pustolovski park Postojna je več kot samo zabava, je druženje v naravi in spoznavanje prijateljev, skratka je varno in urejeno igrišče, kjer vas pričakajo prijazni inštruktorji in animatorji.</p>
           </div>
           <div class="col-md-2 order-md-1">
           </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="display-4">Varnost</h1>
+          <p class="lead text-justify">Celoten Pustolovski park je zgrajen in skladen z EU standardom EN 15567-1 in kot tak zagotavlja 100% varnost vseh obiskovalcev. Za vašo varnost skrbijo naši posebej usposobljeni inštruktorji, poleg njih pa vam je na voljo vrhunska oprema proizvajalcev Black Diamond, Salewa in Petzl.</p>
         </div>
 
         <div class="spacer"></div>
@@ -144,48 +169,48 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <img src="./assets/images/otherheadline/slide1.jpeg" class="bd-placeholder-img" focusable="false" role="img">
+            <img src="./assets/images/otherheadline/slider1.jpg" class="bd-placeholder-img" focusable="false" role="img">
             <div class="dark-overlay">
-              <div class="container">
+              <div class="slider-container">
                 <div class="carousel-caption text-left">
-                  <h1 class="pink">Plezanje po plezalni steni</h1>
-                  <p>Izzovi svoje sposobnosti in se povzpni na visoko plezalno steno.</p>
+                  <h1 class="pink">Rojstnodnevna pustolovščina</h1>
+                  <p>Želite podariti svojemu otroku in njegovim prijateljem prav posebno darilo?</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slide2.jpg" class="bd-placeholder-img" focusable="false" role="img">              
+            <img src="./assets/images/otherheadline/slider2.jpg" class="bd-placeholder-img" focusable="false" role="img">              
             <div class="dark-overlay">
-              <div class="container">
+              <div class="slider-container">
                 <div class="carousel-caption text-right">
-                  <h1 class="pink">Plezalni stolp</h1>
-                  <p>Plezanje po otroških plezalnih stenah, ki so prilagojene njihovim sposobnostim.</p>
+                  <h1 class="pink">Družinska pustolovščina</h1>
+                  <p>Vi s seboj prinesite dobro voljo! Dan smeha, zabave, pustolovščin in zmag v družinskem krogu pa vam priskrbimo mi.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slide3.jpg" class="bd-placeholder-img" focusable="false" role="img">            
+            <img src="./assets/images/otherheadline/slider3.jpg" class="bd-placeholder-img" focusable="false" role="img">            
             <div class="dark-overlay">
-              <div class="container">
+              <div class="slider-container">
                 <div class="carousel-caption text-left">
-                  <h1 class="pink">Prečkanje visečih mostov</h1>
-                  <p>Sprehod čez visoke, gibljive mostove, ki preizkusijo tvojo ravnotežje.</p>
+                  <h1 class="pink">Šolske skupine</h1>
+                  <p>Razveselite šolajoče otroke s poučno in varno avanturo ter prebudite v njih ljubezen do narave.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slide4.jpg" focusable="false" role="img">            
+            <img src="./assets/images/otherheadline/slider4.jpg" focusable="false" role="img">            
             <div class="dark-overlay">
-              <div class="container">
+              <div class="slider-container">
                 <div class="carousel-caption text-right">
-                  <h1 class="pink">Zipline</h1>
-                  <p>Letenje skozi gozd na vrvi, kjer se spustiš po visoki jekleni žici.<a href="#">Zanima me</a></p>
+                  <h1 class="pink">Uglašen team pustolovcev</h1>
+                  <p>Želite okrepiti ekipni duh, sposobnost za delo v timu ter povezovalno energijo v veselem in sproščenem vzdušju narave?</p>
                 </div>
               </div>
             </div>
@@ -204,6 +229,50 @@
     
     <!-- Marketing messaging and featurettes
     ================================================== -->
+
+
+    <div id="C5" class="spacer"></div>
+    <div class="container mt-5 marketing">
+      <h1 class="display-4">Odpiralni Čas</h1>
+      
+      <h3 class="mb-4">SEASON 2024</h3>
+
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 20. April to 26. April</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Saturday, Sunday:</strong> from 12:00h to 18:00h</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 27. April to 5. May</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Every day:</strong> from 12:00h to 18:00h</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 6. May to 15. May</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Monday to Friday:</strong> from 14:00h to 20:00h</p>
+          </div>
+        </li>
+      </ul>
+
+      <hr class="featurette-divider">
+       <!-- Weather conditions description -->
+      <p class="mt-4 white">
+        Please note that the weather conditions may affect the opening hours. The park remains open during dry and sunny days, but may close temporarily during extreme weather events such as heavy rain, strong winds, or storms. Always check the weather forecast before your visit to ensure the best experience.
+      </p>
+    </div>
+    <div class="spacer"></div>
+
+
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div id="myCarousel" class="carousel slide orange" data-ride="carousel">
@@ -211,47 +280,191 @@
 
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Ponudba</h1>
-        <p class="lead">Adrenalinski park v Postojni ponuja širok spekter aktivnosti za vse starosti. Primeren je za otroke, odrasle in večje skupine, kjer lahko uživate v zabavi, izzivih in team building aktivnostih. Idealna destinacija za adrenalinske izkušnje v naravi!</p>
+        <p>
+          PUSTOLOVSKI PARK POSTOJNA vam ponuja edinstven, prvinski in vznemirljiv sprehod med gozdnimi krošnjami kjer boste preizkušali svojo iznajdljivost, pustolovski duh in doživeli prav poseben dan.
+        </p>
       </div>
 
-      <div class="container marketing">  
-          <div class="flexbox">
+            <section class="pt-5 pb-5 orange">
+              <div class="container">
+                  <div class="row">
+                      
+                      <div class="col-12 d-flex justify-content-center">
+                          <a class="btn btn-primary mb-3 mr-1" 
+                            href="#carouselIndicators"
+                            role="button"
+                            data-slide="prev">
+                              <i class="fa fa-arrow-left"></i>
+                          </a>
+                          <a class="btn btn-primary mb-3"
+                            href="#carouselIndicators"
+                            role="button"
+                            data-slide="next">
+                              <i class="fa fa-arrow-right"></i>
+                          </a>
+                      </div>
 
-                <div id="grid" class="grid-wrapper">
-                    <div id="header-image" class="zoom card brick header overflow-hidden">
-                      <a href="details.html">
-                        <div class="brick-overlay">
-                          <div class="carousel-caption text-center">
-                            <h1>Zipline</h1>
+                      <div class="col-12">
+                          <div id="carouselIndicators" 
+                               class="carousel slide"
+                               data-ride="carousel">
+      
+                              <div class="carousel-inner carousel-inner-sm">
+                                  
+                                  <div class="carousel-item ha active">
+                                      <div class="row">
+      
+                                          <div class="col-md-4 mb-3">
+                                              <div class="card blue">
+                                                  <img class="img-fluid" src="./assets/images/offers/thumb-individual.jpg">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">SAMOSTOJNA PUSTOLOVŠČINA</h4>
+                                                      <p class="card-text">Vse mlade in mlade po srcu čaka gozdna avantura, ki jo sestavljajo mostovi, lestve, mreže, vrvi, žice ….</p>
+                                                  </div>
+                                                  <div class="card-footer text-center">
+                                                    <a href="details-d5.html"><button class="btn btn-primary w-100">Več o ponudbi</button></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 mb-3">
+                                              <div class="card blue">
+                                                  <img class="img-fluid" src="./assets/images/offers/thumb-family.jpg">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">DRUŽINSKA PUSTOLOVŠČINA</h4>
+                                                      <p class="card-text">Pustolovski park Postojna nudi imenitno lokacijo za preizkušanje spretnosti in iznajdljivosti vaših otrok.</p>
+                                                  </div>
+                                                  <div class="card-footer text-center">
+                                                    <a href="details-d1.html"><button class="btn btn-primary w-100">Več o ponudbi</button></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 mb-3">
+                                              <div class="card blue">
+                                                  <img class="img-fluid" src="./assets/images/offers/thumb-bday.jpg">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">ROJSTNODNEVNA PUSTOLOVŠČINA</h4>
+                                                      <p class="card-text">Želite podariti svojemu otroku in njegovim prijateljem prav posebno darilo?</p>
+                                                  </div>
+                                                  <div class="card-footer text-center">
+                                                    <a href="details-d2.html"><button class="btn btn-primary w-100">Več o ponudbi</button></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+      
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item ha">
+                                      <div class="row">
+      
+                                          <div class="col-md-4 mb-3">
+                                              <div class="card blue">
+                                                  <img class="img-fluid" src="./assets/images/offers/thumb-school.jpg">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">PUSTOLOVSKO-ŠPORTNI DAN</h4>
+                                                      <p class="card-text">Razveselite šolajoče otroke s poučno in varno avanturo ter prebudite v njih ljubezen do narave.</p>
+                                                  </div>
+                                                  <div class="card-footer text-center">
+                                                    <a href="details-d3.html"><button class="btn btn-primary w-100">Več o ponudbi</button></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-4 mb-3">
+                                              <div class="card blue">
+                                                  <img class="img-fluid" src="./assets/images/offers/thumb-team.jpg">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">UGLAŠEN TEAM PUSTOLOVCEV</h4>
+                                                      <p class="card-text">Želite okrepiti ekipni duh, sposobnost za delo v timu ter povezovalno energijo v vzdušju narave?</p>
+                                                  </div>
+                                                  <div class="card-footer text-center">
+                                                      <a href="details-d4.html"><button class="btn btn-primary w-100">Več o ponudbi</button></a>
+                                                  </div>
+                                              </div>
+                                          </div>
+      
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                        </div>
-                        <div class="col-12 p-0 brick-image overflow-hidden">
-                          <img src="assets/images/offers/offer1.jpg">
-                        </div>
-                      </a>
-                    </div>
-                    <div class="zoom card brick subheader subhead-1"></div>
-                    <div class="zoom card brick subheader subhead-2"></div>
-                    <div class="zoom card brick subheader subhead-3"></div>
-                    <div class="zoom card brick subheader subhead-4"></div>
-                    <div class= "zoom card brick footer"></div>
-                </div>
+                      </div>
+      
+                      <div class="col-12 d-flex justify-content-center">
+                          <a class="btn btn-primary mb-3 mr-1" 
+                             href="#carouselIndicators"
+                             role="button"
+                             data-slide="prev">
+                              <i class="fa fa-arrow-left"></i>
+                          </a>
+                          <a class="btn btn-primary mb-3"
+                             href="#carouselIndicators"
+                             role="button"
+                             data-slide="next">
+                              <i class="fa fa-arrow-right"></i>
+                          </a>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="spacer"></div>
+          </section>
 
           </div>
+          
         </div>
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-      </div>
-    </div>
+
 
     <!-- End of Content
     ================================================== -->
 
-   
+
+
+    <div id="C6" class="spacer"></div>
+    <div class="container mt-5 marketing">
+      <h1 class="display-4">Cenik</h1>
+      
+      <h3 class="mb-4">SEASON 2024</h3>
+
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 20. April to 26. April</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Saturday, Sunday:</strong> from 12:00h to 18:00h</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 27. April to 5. May</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Every day:</strong> from 12:00h to 18:00h</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-date">
+            <span>from 6. May to 15. May</span>
+          </div>
+          <div class="timeline-details">
+            <p><strong>Monday to Friday:</strong> from 14:00h to 20:00h</p>
+          </div>
+        </li>
+      </ul>
+
+      <hr class="featurette-divider">
+       <!-- Weather conditions description -->
+      <p class="mt-4 white">
+        Please note that the weather conditions may affect the opening hours. The park remains open during dry and sunny days, but may close temporarily during extreme weather events such as heavy rain, strong winds, or storms. Always check the weather forecast before your visit to ensure the best experience.
+      </p>
+    </div>
+    <div class="spacer"></div>
+
+
+
     <!-- Contacts
     ================================================== -->
-    <div id="C4" class="spacer"></div>
-    <div class="container marketing">  
+    <section class="light">
+    <div id="C4" class="spacer light"></div>
+    <div class="container marketing light">  
         <div class="spacer"></div>
         
     
@@ -264,14 +477,14 @@
                 <div class="col-1 float-left pl-1">
                   <i class="fa fa-mobile-alt"></i>
                 </div>
-                <p>+386 00 000 000</p>
+                <p>+386 40 567 046</p>
 
               </li>
               <li class="list-group-item">
                 <div class="col-1 float-left pl-1">
                   <i class="fas fa-at"></i>
                 </div>
-                <p>info@zipline.si </p>
+                <p>info@pustolovski-park-postojna.si</p>
               </li>
               <li class="list-group-item">
                 <div class="col-1 float-left pl-1">
@@ -297,7 +510,8 @@
           </div>
         </div>
     </div>
-
+    <div id="C4" class="spacer light"></div>
+  </section>
     <!-- End of Contacts
     ================================================== -->
 
@@ -305,11 +519,10 @@
     ================================================== -->
 
     <footer class="text-muted">
-        <hr class="featurette-divider">
         <div class="container">
             <div class="col-auto float-left">
                 <img src="./assets/logo/logo.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 45 35" focusable="false">
-                <small class="d-block mb-3 text-muted">&copy; 2025 - all rights reserved</small>
+                <small class="d-block mb-3 white">&copy; 2025 - all rights reserved</small>
             </div>
 
             <div class="col-auto float-right">
@@ -323,9 +536,10 @@
         <div class="container">
           <div class="d-flex justify-content-center">
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Privacy</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Support</a></li>
+              <li class="list-inline-item"><a href="#">Zasebnost</a></li>
+              <li class="list-inline-item"><a href="#">Splošni Pogoji</a></li>
+              <li class="list-inline-item"><a href="#">Pravila</a></li>
+              <li class="list-inline-item"><a href="#">Podpora</a></li>
             </ul>
           </div>
         </div>
@@ -349,6 +563,12 @@
     <script src="./js/adrenalin.js"></script>
 
     <script>
+      var video = document.getElementById('myVideo');
+      video.play().catch(function(error) {
+        // Handle autoplay error if needed
+        console.log('Autoplay failed:', error);
+      });
+
       Holder.addTheme('thumb', {
         bg: '#55595c',
         fg: '#eceeef',

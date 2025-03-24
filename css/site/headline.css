@@ -1,14 +1,49 @@
+@font-face {
+  font-family: 'CustomFont'; /* Choose a name for the font */
+  src: url('../../assets/fonts/lithos.ttf') format('truetype'); /* Specify the path to the .ttf file */
+  font-weight: normal; /* Optional: Define the weight (normal, bold, etc.) */
+  font-style: normal; /* Optional: Define the style (normal, italic, etc.) */
+}
+
+/* Apply the custom font to the body or specific elements */
+body {
+  font-family: 'CustomFont', sans-serif; /* Fallback to sans-serif if font fails to load */
+}
+
+.ha {
+  height: auto !important;
+  min-height: 550px;
+}
+
 .container {
+  max-width: 960px;
+  z-index: 1000 !important;
+  position: relative;
+}
+
+.slider-container {
   max-width: 960px;
 }
 
 .orange {
-  background-color: #46910c !important;
-  color: #fff !important;
+  background-color: #bc6f0a !important;
+  color: rgb(88, 53, 10) !important;
+}
+
+.blue {
+  color: white !important;
+  background-color: rgb(28, 122, 195) !important;
+}
+
+.light {
+  background-color: white !important;
+  color: rgb(88, 53, 10) !important;
 }
 
 .headline {
+  position: relative;
   height: 100vh;
+  z-index: 900 !important;
 }
 
 .panelCon{
@@ -61,8 +96,8 @@
 .btn-custom {
   padding: 12px 30px;
   font-size: 1.1rem;
-  border: #46910c;
-  background-color: #46910c !important;
+  border: #bc6f0a;
+  background-color: #bc6f0a !important;
   color: #fff !important;
 }
 

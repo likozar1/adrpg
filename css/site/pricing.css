@@ -20,5 +20,19 @@ html {
 }
 
 .pink {
-  color: #46910c;
+  color: #bc6f0a;
 }
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 290px !important;
+  }
+  .carousel-inner-sm {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 290px !important;
+    overflow: hidden;
+  }
+}
+
