@@ -5,6 +5,7 @@
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: rgb(88, 53, 10);
 }
 
 footer p {
@@ -12,11 +13,11 @@ footer p {
 }
 
 footer a {
-  color: gray !important;
+  color: white !important;
 }
 
 footer a:hover, a:focus {
-  color: #46910c !important;
+  color: white !important;
 }
 
 .clear {
