@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <title>Plezalne poti</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./css/site/nav.css" rel="stylesheet">
+    <link href="./css/site/headline.css" rel="stylesheet">
+    <link href="./css/site/comments.css" rel="stylesheet">
+    <link href="./css/site/content.css" rel="stylesheet">
+    <link href="./css/site/pricing.css" rel="stylesheet">
+    <link href="./css/site/footer.css" rel="stylesheet">
+    <link href="./css/site/details.css" rel="stylesheet">
+
+  </head>
+
+  <body class="blue">
+
+    <!-- Nav Bar
+    ================================================== -->
+    <nav class="fixed-top navbar navbar-expand-lg nav-transparent-invert navbar-light">
+      <div class="container">
+        <a class="py-2 navbar-brand" href="index.html">
+          <img src="./assets/logo/logo.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 35 35" focusable="false">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#C1">O parku</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#C2">Ponudba</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#C5">Odpiralni čas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#C4">Kako do nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galerija</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Nav Bar
+    ================================================== -->
+
+  <div id="C1" class="spacer blue"></div>
+  
+  <div class="container marketing blue">  
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Naroči Darilni Bon</h1>
+    </div>
+
+    <hr class="featurette-divider">
+  
+      <div class="row featurette">
+          <div class="col-12 col-md-8 mx-auto">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Ime in Priimek</label>
+                      <input type="text" class="form-control" id="name" placeholder="Vnesite vaše ime in priimek" required>
+                  </div>
+  
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email naslov</label>
+                      <input type="email" class="form-control" id="email" placeholder="Vnesite vaš email" required>
+                  </div>
+  
+                  <div class="mb-3">
+                      <label for="phone" class="form-label">Telefonska številka</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="Vnesite vašo telefonsko številko" required>
+                  </div>
+
+                  <div class="mb-3" id="voucherGroup">
+                    <label for="voucher1" class="form-label">Darilni bon</label>
+                    <div class="d-flex align-items-center">
+                        <select class="form-control voucher-selector" id="voucher1" required>
+                            <option value="">Izberite darilni bon</option>
+                            <option value="10">10 EUR</option>
+                            <option value="20">20 EUR</option>
+                            <option value="50">50 EUR</option>
+                            <option value="100">100 EUR</option>
+                        </select>
+                        <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-secondary" id="addVoucherBtn">Dodaj še en darilni bon</button>
+
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Sporočilo</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Vnesite vaše sporočilo"></textarea>
+                  </div>
+
+                  <!-- Terms and Conditions Checkbox -->
+                  <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">Sprejemam pogoje uporabe</label>
+                  </div>
+  
+                  <button type="submit" class="btn btn-primary orange">Naroči</button>
+              </form>
+          </div>
+      </div>  
+
+    <hr class="featurette-divider">
+</div>
+
+
+  <div id="C4" class="spacer blue"></div>
+   
+
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="text-muted">
+        <div class="container">
+            <div class="col-auto float-left">
+                <img src="./assets/logo/logo.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 45 35" focusable="false">
+                <small class="d-block mb-3 text-muted">&copy; 2025 - all rights reserved</small>
+            </div>
+
+            <div class="col-auto float-right">
+              <p class="float-right">
+                <a href="#">Na vrh</a>
+              </p>
+            </div>
+            <div class='clear'></div>
+        </div>
+
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy</a></li>
+              <li class="list-inline-item"><a href="#">Terms</a></li>
+              <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+    <!-- End of Footer
+    ================================================== -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/holder.min.js"></script>
+    <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/comments.js"></script>
+    <script src="./js/likozar.js"></script>
+
+    <script>
+      let voucherCounter = 1; // Start voucher counter
+  
+      document.getElementById('addVoucherBtn').addEventListener('click', function () {
+          voucherCounter++; // Increment counter for the new voucher input
+  
+          // Create a new div element for the new voucher
+          const newVoucherDiv = document.createElement('div');
+          newVoucherDiv.classList.add('d-flex', 'align-items-center');
+          
+          // Create the new select element for voucher selection
+          const newVoucherSelect = document.createElement('select');
+          newVoucherSelect.classList.add('form-control', 'voucher-selector');
+          newVoucherSelect.setAttribute('id', 'voucher' + voucherCounter);
+          newVoucherSelect.required = true;
+  
+          // Add options to the select element
+          newVoucherSelect.innerHTML = `
+              <option value="">Izberite darilni bon</option>
+              <option value="10">10 EUR</option>
+              <option value="20">20 EUR</option>
+              <option value="50">50 EUR</option>
+              <option value="100">100 EUR</option>
+          `;
+  
+          // Create the new remove button
+          const removeBtn = document.createElement('button');
+          removeBtn.type = 'button';
+          removeBtn.classList.add('btn', 'btn-danger', 'ms-2');
+          removeBtn.textContent = 'X';
+          removeBtn.setAttribute('onclick', 'removeVoucher(this)');
+          
+          // Append the select and remove button to the new div
+          newVoucherDiv.appendChild(newVoucherSelect);
+          newVoucherDiv.appendChild(removeBtn);
+  
+          // Append the new voucher div to the voucher group container
+          document.getElementById('voucherGroup').appendChild(newVoucherDiv);
+      });
+  
+      // Function to remove the voucher
+      function removeVoucher(button) {
+          const voucherDiv = button.parentElement;
+          voucherDiv.remove();
+      }
+  </script>
+</body>
+</html>
