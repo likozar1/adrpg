@@ -107,3 +107,12 @@ body {
     margin-top: 7rem;
   }
 }
+
+.img-fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Transition effect */
+}
+
+.img-fade.visible {
+  opacity: 1; /* Fade in to full opacity */
+}

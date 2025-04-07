@@ -1,22 +1,12 @@
-// Begin jQuery
-
-function parallax() {
-    var s = document.getElementById("floater");
-    var yPos = 0 - window.pageYOffset/4;  
-    s.style.top = 0 + yPos + "%";
-}
-
 $(window).on('scroll',function(){
-    $("#floater2").css('bottom',$(window).scrollTop()*-0.4);
     $(".title").css('bottom',$(window).scrollTop()*-0.1);
-    console.log(window.pageYOffset);
+
     if (window.pageYOffset >= 800) {
         $(".panelCon").css('display',"none");
     } else {
         $(".panelCon").css('display',"block");
     }
 });
-
 
 $(document).ready(function() {
     var $window = $(window);
@@ -43,11 +33,6 @@ $(document).ready(function() {
             $("button.navbar-toggler").click();
         }
     });
-
-    window.addEventListener("scroll", function(){
-        parallax(); 
-    });
-
 })
 
 
@@ -67,5 +52,3 @@ document.getElementById('language-toggle').addEventListener('click', function() 
     // Redirect to the new URL
     window.location.href = currentUrl;
 });
-
-
