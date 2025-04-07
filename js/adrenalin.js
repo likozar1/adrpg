@@ -50,3 +50,22 @@ $(document).ready(function() {
 
 })
 
+
+document.getElementById('language-toggle').addEventListener('click', function() {
+    // Get the current URL
+    let currentUrl = window.location.href;
+
+    // Check if the URL already has '-en' (to toggle back to the original language)
+    if (currentUrl.includes('-en.html')) {
+        // Remove '-en' from the URL and reroute to the original HTML file
+        currentUrl = currentUrl.replace('-en.html', '.html');
+    } else {
+        // Append '-en' to the filename to switch to English version
+        currentUrl = currentUrl.replace('.html', '-en.html');
+    }
+
+    // Redirect to the new URL
+    window.location.href = currentUrl;
+});
+
+
