@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/favicon/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <title>Plezalne poti</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="./css/site/nav.css" rel="stylesheet">
+    <link href="./css/site/headline.css" rel="stylesheet">
+    <link href="./css/site/comments.css" rel="stylesheet">
+    <link href="./css/site/content.css" rel="stylesheet">
+    <link href="./css/site/pricing.css" rel="stylesheet">
+    <link href="./css/site/footer.css" rel="stylesheet">
+    <link href="./css/site/details.css" rel="stylesheet">
+
+  </head>
+
+  <body class="blue">
+
+    <!-- Nav Bar
+    ================================================== -->
+    <nav class="fixed-top navbar navbar-expand-lg nav-transparent-invert navbar-light">
+      <div class="container">
+        <a class="py-2 navbar-brand" href="index-en.html">
+          <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 35 35" focusable="false">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="index-en.html#C1">Park</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index-en.html#C2">Offer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="route-en.html">Routes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index-en.html#C5">Opening Hours</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index-en.html#C6">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index-en.html#C4">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery-en.html">Gallery</a>
+            </li>
+
+            <!-- Language Selector with Flag Icons -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-label="Switch to English" id="language-toggle">
+                  <img src="https://flagcdn.com/w20/si.png" alt="English" class="flag-icon" style="width: 20px; height: auto;">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Nav Bar
+    ================================================== -->
+
+  <div id="C1" class="spacer blue"></div>
+  
+  <div class="container marketing blue">  
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Order a Gift Voucher</h1>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette">
+      <div class="col-12 col-md-8 mx-auto">
+          <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+              </div>
+  
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+  
+              <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+  
+              <div class="mb-3" id="voucherGroup">
+                  <label for="voucher1" class="form-label">Gift Voucher</label>
+                  <div class="d-flex align-items-center">
+                      <select class="form-control voucher-selector" id="voucher1" required>
+                          <option value="">Select a gift voucher</option>
+                          <option value="10">10 EUR</option>
+                          <option value="20">20 EUR</option>
+                          <option value="50">50 EUR</option>
+                          <option value="100">100 EUR</option>
+                      </select>
+                      <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
+                  </div>
+              </div>
+  
+              <button type="button" class="btn btn-secondary" id="addVoucherBtn">Add Another Gift Voucher</button>
+  
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+              </div>
+  
+              <!-- Terms and Conditions Checkbox -->
+              <div class="form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                  <label class="form-check-label" for="termsCheck">I accept the terms of use</label>
+              </div>
+  
+              <button type="submit" class="btn btn-primary orange">Order</button>
+          </form>
+      </div>
+  </div>  
+
+    <hr class="featurette-divider">
+</div>
+
+
+  <div id="C4" class="spacer blue"></div>
+   
+
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="text-muted">
+      <div class="container">
+          <div class="col-auto float-left">
+              <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 45 35" focusable="false">
+              <small class="d-block mb-3 text-muted">&copy; 2025 - all rights reserved</small>
+          </div>
+  
+          <div class="col-auto float-right">
+              <p class="float-right">
+                  <a href="#">Back to top</a>
+              </p>
+          </div>
+          <div class='clear'></div>
+      </div>
+  
+      <div class="container">
+          <div class="d-flex justify-content-center">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">General Terms</a></li>
+                  <li class="list-inline-item"><a href="rules-en.html">Rules</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+
+    <!-- End of Footer
+    ================================================== -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
+     <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/holder.min.js"></script>
+    <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/comments.js"></script>
+    <script src="./js/adrenalin.js"></script>
+
+    <script>
+      let voucherCounter = 1; // Start voucher counter
+  
+      document.getElementById('addVoucherBtn').addEventListener('click', function () {
+          voucherCounter++; // Increment counter for the new voucher input
+  
+          // Create a new div element for the new voucher
+          const newVoucherDiv = document.createElement('div');
+          newVoucherDiv.classList.add('d-flex', 'align-items-center');
+          
+          // Create the new select element for voucher selection
+          const newVoucherSelect = document.createElement('select');
+          newVoucherSelect.classList.add('form-control', 'voucher-selector');
+          newVoucherSelect.setAttribute('id', 'voucher' + voucherCounter);
+          newVoucherSelect.required = true;
+  
+          // Add options to the select element
+          newVoucherSelect.innerHTML = `
+              <option value="">Select a gift voucher</option>
+              <option value="10">10 EUR</option>
+              <option value="20">20 EUR</option>
+              <option value="50">50 EUR</option>
+              <option value="100">100 EUR</option>
+          `;
+  
+          // Create the new remove button
+          const removeBtn = document.createElement('button');
+          removeBtn.type = 'button';
+          removeBtn.classList.add('btn', 'btn-danger', 'ms-2');
+          removeBtn.textContent = 'X';
+          removeBtn.setAttribute('onclick', 'removeVoucher(this)');
+          
+          // Append the select and remove button to the new div
+          newVoucherDiv.appendChild(newVoucherSelect);
+          newVoucherDiv.appendChild(removeBtn);
+  
+          // Append the new voucher div to the voucher group container
+          document.getElementById('voucherGroup').appendChild(newVoucherDiv);
+      });
+  
+      // Function to remove the voucher
+      function removeVoucher(button) {
+          const voucherDiv = button.parentElement;
+          voucherDiv.remove();
+      }
+  </script>
+</body>
+</html>

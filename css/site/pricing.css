@@ -11,6 +11,10 @@ html {
   max-width: 960px;
 }
 
+.mnh650 {
+  min-height: 670px;
+}
+
 .pricing-header {
   max-width: 700px;
 }
@@ -23,9 +27,28 @@ html {
   color: #bc6f0a;
 }
 
+@media (min-width: 768px) {
+  #sm-ofr {
+    display: none;
+  }
+
+  #ofr {
+    display: contents;
+  }
+}
+
 @media (max-width: 768px) {
+  #sm-ofr {
+    display:contents;
+  }
+
+  #ofr {
+    display: none;
+  }
+
   .card {
     max-width: 290px !important;
+    margin: auto;
   }
   .carousel-inner-sm {
     margin-left: auto;
