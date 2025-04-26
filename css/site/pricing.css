@@ -37,6 +37,10 @@ html {
   }
 }
 
+.brown {
+  color:#bc6f0a;
+}
+
 @media (max-width: 768px) {
   #sm-ofr {
     display:contents;
@@ -47,7 +51,7 @@ html {
   }
 
   .card {
-    max-width: 290px !important;
+    max-width: 350px !important;
     margin: auto;
   }
   .carousel-inner-sm {

@@ -50,4 +50,25 @@
     -webkit-transition : -webkit-filter 500ms linear;
 }
 
+.con-link {
+  background-color: #bc6f0a !important;
+  color: rgb(88, 53, 10) !important;
+ 
+}
+
+.nav-tabs {
+  border-bottom:5px solid rgb(88, 53, 10) !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom:1px solid rgb(88, 53, 10) !important;
+  border:1px solid rgb(88, 53, 10) !important;
+  border-bottom:1px solid rgb(88, 53, 10) !important;
+}
+
+.con-link.active {
+  background-color: rgb(88, 53, 10) !important;
+  color: white !important;
+}
+
 

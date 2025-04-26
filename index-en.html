@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="./assets/favicon/icon.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 
     <title>Adventure Park</title>
@@ -15,7 +15,6 @@
     <!-- Bootstrap core CSS -->
     <link href="./css/slick.css" rel="stylesheet">
     <link href="./css/slick-theme.css" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
@@ -48,14 +47,19 @@
             <li class="nav-item">
               <a class="nav-link" href="#C2">Offer</a>
             </li>
+            <!--
             <li class="nav-item">
               <a class="nav-link" href="route-en.html">Routes</a>
             </li>
+            -->
             <li class="nav-item">
-              <a class="nav-link" href="#C5">Opening Hours</a>
+              <a class="nav-link" href="rules-en.html">Rules</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#C6">Pricing</a>
+              <a class="nav-link" href="#C6" onclick="activateTab('hours')">Opening Hours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#C6" onclick="activateTab('prices')">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#C4">Contact</a>
@@ -86,81 +90,287 @@
       <video id="myVideo" class="fullscreen-video" playsinline playsInline autoplay autoPlay loop muted>
         <source src="./assets/videos/adrenalin.mp4" type="video/mp4">
       </video>
-
+    
       <!-- Overlay and Content -->
       <div class="video-overlay">
         <div class="video-content">
           <div class="panelCon">   
             <div class="title col-md-5 p-5 mx-auto my-5">
-              <h1 class="pink display-4 font-weight-normal">Adventure Park</h1>
-              <p class="lead font-weight-normal">Do you want an unforgettable experience surrounded by nature? A day full of adventures, laughter, and fun with friends, family, or colleagues?</p>
-            </div>          
+                <img src="./assets/logo/logo-w.png" width="125" height="125" alt="Adventure Park Logo" class="img-fluid mb-3">
+                <h2 id="text" class="fade-text text-center px-3">
+                  Do you want an unforgettable experience in the heart of nature?
+                </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
 
     <!-- End of Headline
     ================================================== -->
 
+    <div class="carousel slide blue" data-ride="carousel">
+      <div class="spacer blue"></div>
+    
+      <div class="container blue">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body d-flex flex-column justify-content-center blue">
+                <h4 class="card-title">8 Climbing Courses</h4>
+                <p class="card-text">Suitable for children and adults aged 4 and up.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body d-flex flex-column justify-content-center blue">
+                <h4 class="card-title">90 Fun Obstacles</h4>
+                <p class="card-text">Made up of bridges, ladders, nets, ropes, and wires.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <div class="card-body d-flex flex-column justify-content-center blue">
+                <h4 class="card-title">20 Different Ziplines</h4>
+                <p class="card-text">Ranging from 0 to 15 meters in height.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer blue"></div>
+    </div>
+    
+
+    <div class="carousel slide orange" data-ride="carousel">
+      <div class="spacer" id="C6"></div>
+    
+      <div class="container mt-5">
+        <!-- Full-width, Centered Tabs -->
+        <ul class="nav nav-tabs nav-fill justify-content-center" id="infoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="con-link nav-link active w-100" id="hours-tab" data-bs-toggle="tab" data-bs-target="#hours" type="button" role="tab">Opening Hours</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="con-link nav-link w-100" id="prices-tab" data-bs-toggle="tab" data-bs-target="#prices" type="button" role="tab">Prices</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="con-link nav-link w-100" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab">Location</button>
+          </li>
+        </ul>
+    
+        <!-- Tab Content -->
+        <div class="tab-content p-3" id="infoTabContent">
+          <!-- Opening Hours -->
+          <div class="tab-pane fade show active" id="hours">
+            <div class="container mt-5 marketing">            
+              <ul class="timeline">
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>May 10 to June 15</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>Saturday, Sunday</strong> from 12:00 to 18:00</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>June 16 to August 31</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>Saturday, Sunday</strong> from 12:00 to 17:00</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>September 1 to September 30</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>Saturday, Sunday</strong> from 12:00 to 18:00</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>October 1 to October 31</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>Saturday, Sunday</strong> from 12:00 to 17:00</p>
+                  </div>
+                </li>
+              </ul>
+    
+              <hr class="featurette-divider">
+              <p class="mt-4 orange">
+                This schedule applies to individual visitors.
+                <br>
+                Last entry to the park is 2 hours before closing!
+                <br><br>
+                NO ADVANCE NOTICE REQUIRED FOR GROUPS OF FEWER THAN 10 PARTICIPANTS!
+                <br>
+                We can accommodate group visits according to your preferences!
+              </p>
+            </div>
+          </div>
+    
+          <!-- Prices -->
+          <div class="tab-pane fade" id="prices">
+            <div class="container mt-5 marketing">        
+              <ul class="timeline">
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Children up to 7 years</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>€14</strong></p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Children up to 14 years</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>€18</strong></p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Adults</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>€20</strong></p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Family - 2 Adults + 1 Child</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>€50</strong></p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-date">
+                    <span>Family - 2 Adults + 2 Children</span>
+                  </div>
+                  <div class="timeline-details">
+                    <p><strong>€65</strong></p>
+                  </div>
+                </li>
+              </ul>
+    
+              <hr class="featurette-divider">
+    
+              <p class="mt-4 orange">
+                NO ADVANCE NOTICE REQUIRED FOR GROUPS OF FEWER THAN 10 PARTICIPANTS!
+                <br><br>
+                Admission is not time-limited. In case of high visitor volume, we may ask you to complete your adventure after 3 hours.
+                <br>Companions, walkers, curious visitors, and dogs do not need to pay an entrance fee.
+                
+                <br><br>
+                Minimum body height for children, with arms extended above the head: 140 cm.
+                <br>
+                Children under 16 may only enter the adventure park if accompanied by an adult.
+                <br>1 adult can accompany a maximum of 3 children.
+                <br>We recommend wearing sports shoes and clothing.
+    
+                <br><br>
+                Prices are subject to change without prior notice.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Location -->
+          <div class="tab-pane fade" id="location">
+            <div class="row">
+              <!-- Left text section -->
+              <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <p>The adventure park is located right next to the Postojna Cave, where parking is available.</p>
+                <p>Free parking is also available, as marked on the map.</p>
+              </div>
+    
+              <!-- Right image section -->
+              <div class="col-12 col-md-7">
+                <!-- Google map -->
+                <div class="map-container-small">
+                  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EywejZNo6zl6JvAlNow0JcveNXVrEUE&ehbc=2E312F&noprof=1&center=45.78034,14.2062&zoom=18" 
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    style="border:0; margin-top: -60px;">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="spacer"></div>
+    </div>
+    
+
         <!-- End Content
     ================================================== -->
 
-    <!-- Content
-    ================================================== -->
     <div id="C1" class="spacer blue"></div>
-    <div class="container marketing blue">  
+<div class="container marketing blue">  
 
+  <div class="container text-center">
+    <!-- Text Content -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h1 class="display-4">About the Park</h1>
+        <p class="lead" style="text-align: justify;">
+          A unique, primal, and thrilling walk among the forest treetops, where you’ll test your resourcefulness and adventurous spirit and experience a truly special day. 
+          All young people and the young at heart can enjoy a forest adventure made up of ziplines, bridges, ladders, nets, ropes, and wires — climbing or gliding from one adventure to another. 
+          With a bit of encouragement, everyone — regardless of age or physical condition — can overcome 90 fun obstacles spread across a large area dedicated to active outdoor fun, socializing, and play, located right next to the Postojna Cave.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Video Below Text -->
+    <div class="row justify-content-center mt-4">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1 class="display-4">About the Park</h1>
-          <p class="lead text-justify">
-              A unique, primal, and exciting walk among the treetops where you'll test your resourcefulness, adventurous spirit, and experience a truly special day. All the young and young at heart can enjoy a forest adventure made up of bridges, ladders, nets, ropes, wires... which you’ll climb or glide across from one adventure to the next. 
-              With a bit of encouragement, everyone – regardless of age or physical fitness – can overcome 78 different fun obstacles located in a large area dedicated to active leisure, socializing, playing, and connecting, right next to the Postojna Cave.
-          </p>
+        <video class="w-100 mx-auto d-block" controls>
+          <source src="./assets/videos/adrenalin-full.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-          <div class="col-md-10">
-              <h2 class="featurette-heading"><span class="white">What is an Adventure Park?</span></h2>
-              <p class="lead text-justify">
-                  The Postojna Adventure Park is designed for fun for the whole family. In the park, you can rise from the ground into the treetops and embark on a true journey among the trees. You'll see and experience the world from a whole new perspective.
-                  <br><br>
-                  The concept of the adventure park is based on an experiential journey across a specially designed climbing course built among the tree canopies, where visitors can choose a difficulty level that suits them. The Postojna Adventure Park consists of 5 different adventurous routes with 78 different climbing elements that offer an exciting and interesting experience. The climbing park provides 2–3 hours of unique fun. Everyone taller than 120 cm or at least 4 years old is welcome.
-              </p>
-          </div>
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-          <div class="col-md-10 order-md-2 text-right">
-              <h2 class="featurette-heading">Why spend a day at the Adventure Park?</h2>
-              <p class="lead text-justify">
-                  The Postojna Adventure Park is more than just fun – it’s about socializing in nature and meeting new friends. It's a safe and well-maintained playground, where friendly instructors and entertainers await you.
-              </p>
-          </div>
-          <div class="col-md-2 order-md-1">
-          </div>
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-          <h1 class="display-4">Safety</h1>
-          <p class="lead text-justify">
-              The entire Adventure Park is built in compliance with EU standard EN 15567-1, ensuring 100% safety for all visitors. Your safety is overseen by our specially trained instructors, and you'll be equipped with top-quality gear from brands like Black Diamond, Salewa, and Petzl.
-          </p>
-      </div>
-    
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
 
-        <div class="spacer"></div>
+  <div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+      <h2 class="display-4">Why Spend a Day at the Adventure Park?</h2>
+      <p class="lead text-justify" style="text-align: justify;">
+        Postojna Adventure Park is more than just fun — it’s a chance to connect with nature, meet new friends, and enjoy a safe and well-organized playground where friendly instructors and animators are always ready to help.
+      </p>
+    </div>
+  </div>
 
-    
-        <!-- /END THE FEATURETTES -->
-    
-    </div><!-- /.container -->
+  <hr class="featurette-divider">
+
+  <div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+      <h1 class="display-4">Safety</h1>
+      <p class="lead text-justify" style="text-align: justify;">
+        The entire Adventure Park is built in accordance with EU standard EN 15567-1, ensuring 100% safety for all visitors. 
+        Your safety is guaranteed by our specially trained instructors, supported by top-quality equipment from Black Diamond, Kong, and Petzl.
+      </p>
+      <p class="lead text-justify" style="text-align: justify;">
+        We use the CouDuo Pro safety system by Kong, which functions without the need to unclip, eliminating user error or negligence.
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+</div><!-- /.container -->
 
     <!-- End of Content
     ================================================== -->
@@ -168,483 +378,267 @@
     <!-- Content
     ================================================== -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="./assets/images/otherheadline/slider1.jpg" class="bd-placeholder-img" focusable="false" role="img">
-            <div class="dark-overlay">
-                <div class="slider-container">
-                    <div class="carousel-caption text-left">
-                        <h1 class="pink">Birthday Adventure</h1>
-                        <p>Want to give your child and their friends a truly special gift?</p>
-                    </div>
-                </div>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/otherheadline/slider5.jpg" class="d-block w-100" alt="Slide 5">
+          <div class="dark-overlay">
+            <div class="slider-container">
+              <div class="carousel-caption text-right">
+                <a class="brown" href="form-en.html" style="text-decoration: none;"><h1 class="pink">Gift Voucher</h1></a>
+                <p>
+                  Give a <a class="brown" href="form-en.html">gift voucher</a> to your loved ones and let them enjoy our services whenever it suits them best.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        
+    
         <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slider2.jpg" class="bd-placeholder-img" focusable="false" role="img">              
-            <div class="dark-overlay">
-                <div class="slider-container">
-                    <div class="carousel-caption text-right">
-                        <h1 class="pink">Family Adventure</h1>
-                        <p>You bring the good vibes! We’ll provide a day full of laughter, fun, adventure, and family victories.</p>
-                    </div>
-                </div>
+          <img src="./assets/images/otherheadline/slider1.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="dark-overlay">
+            <div class="slider-container">
+              <div class="carousel-caption text-left">
+                <a class="brown" href="details-d2-en.html" style="text-decoration: none;"><h1 class="pink">Birthday Adventure</h1></a>
+                <p>Want to give your child and their friends a truly special gift?</p>
+              </div>
             </div>
+          </div>
         </div>
-        
+    
         <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slider3.jpg" class="bd-placeholder-img" focusable="false" role="img">            
-            <div class="dark-overlay">
-                <div class="slider-container">
-                    <div class="carousel-caption text-left">
-                        <h1 class="pink">School Groups</h1>
-                        <p>Delight students with an educational and safe adventure, and spark their love for nature.</p>
-                    </div>
-                </div>
+          <img src="./assets/images/otherheadline/slider2.jpg" class="d-block w-100" alt="Slide 2">
+          <div class="dark-overlay">
+            <div class="slider-container">
+              <div class="carousel-caption text-right">
+                <a class="brown" href="details-d1-en.html" style="text-decoration: none;"><h1 class="pink">Family Adventure</h1></a>
+                <p>Just bring your good mood! We’ll provide a day full of laughter, fun, adventures, and family victories.</p>
+              </div>
             </div>
+          </div>
         </div>
-        
+    
         <div class="carousel-item">
-            <img src="./assets/images/otherheadline/slider4.jpg" focusable="false" role="img">            
-            <div class="dark-overlay">
-                <div class="slider-container">
-                    <div class="carousel-caption text-right">
-                        <h1 class="pink">Team of Adventurers</h1>
-                        <p>Want to strengthen team spirit, collaboration, and positive energy in a joyful and relaxed natural setting?</p>
-                    </div>
-                </div>
+          <img src="./assets/images/otherheadline/slider3.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="dark-overlay">
+            <div class="slider-container">
+              <div class="carousel-caption text-left">
+                <a class="brown" href="details-d3-en.html" style="text-decoration: none;"><h1 class="pink">School Groups</h1></a>
+                <p>Delight schoolchildren with an educational and safe adventure and spark their love for nature.</p>
+              </div>
             </div>
+          </div>
         </div>
-        
-
+    
+        <div class="carousel-item">
+          <img src="./assets/images/otherheadline/slider4.jpg" class="d-block w-100" alt="Slide 4">
+          <div class="dark-overlay">
+            <div class="slider-container">
+              <div class="carousel-caption text-right">
+                <a class="brown" href="details-d4-en.html" style="text-decoration: none;"><h1 class="pink">Tuned-In Team of Adventurers</h1></a>
+                <p>Looking to strengthen team spirit, collaboration, and positive energy in a cheerful and relaxed outdoor environment?</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
+    
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-
-
-    <div id="C5" class="spacer"></div>
-    <div class="container mt-5 marketing">
-      <h1 class="display-4">Opening Hours</h1>
-
-      <h3 class="mb-4">SEASON 2024</h3>
-
-      <ul class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>from 20 April to 26 April</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>Saturday, Sunday:</strong> from 12:00 to 18:00</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>from 27 April to 5 May</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>Every day:</strong> from 12:00 to 18:00</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>from 6 May to 15 May</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>Monday to Friday:</strong> from 14:00 to 20:00</p>
-          </div>
-        </li>
-      </ul>
-
-      <hr class="featurette-divider">
-
-      <p class="mt-4 white">
-        The schedule applies to individual visits.
-        <br>
-        Last park entry is 2 hours before closing!
-        <br><br>
-        NO PRIOR NOTICE IS REQUIRED FOR GROUPS OF FEWER THAN 10 PARTICIPANTS!
-        <br>
-        For all groups, we are open entirely according to your wishes!
-      </p>
-    </div>
-    <div class="spacer"></div>
-
-
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div id="myCarousel" class="carousel slide orange" data-ride="carousel">
+    <div class="orange">
       <div id="C2" class="spacer"></div>
-
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Offer</h1>
-        <p class="lead text-justify">
-          THE ADVENTURE PARK POSTOJNA offers you a unique, primal, and exciting walk among the treetops, where you’ll test your resourcefulness, adventurous spirit, and experience a truly special day.
-        </p>        
-      </div>
-
-            <section class="pt-5 pb-5 orange">
-              <div class="container">
-
-                <div class="col-12" id="sm-ofr">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card blue">
-                            <img class="img-fluid" src="./assets/images/offers/thumb-individual.jpg">
-                            <div class="card-body">
-                                <h4 class="card-title">SOLO ADVENTURE</h4>
-                                <p class="card-text">A forest adventure awaits all the young and young at heart — with bridges, ladders, nets, ropes, wires...</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="details-d5-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="card blue">
-                            <img class="img-fluid" src="./assets/images/offers/thumb-family.jpg">
-                            <div class="card-body">
-                                <h4 class="card-title">FAMILY ADVENTURE</h4>
-                                <p class="card-text">Adventure Park Postojna offers the perfect setting for your kids to test their skills and creativity.</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="details-d1-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="card blue">
-                            <img class="img-fluid" src="./assets/images/offers/thumb-bday.jpg">
-                            <div class="card-body">
-                                <h4 class="card-title">BIRTHDAY ADVENTURE</h4>
-                                <p class="card-text">Want to give your child and their friends a truly special gift?</p>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="details-d2-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                            </div>
-                        </div>
-                    </div>
-                  <div class="col-12 col-md-4 mb-3">
-                    <div class="card blue">
-                      <img class="img-fluid" src="./assets/images/offers/thumb-school.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">ADVENTURE SPORTS DAY</h4>
-                        <p class="card-text">Delight school children with a fun, educational, and safe adventure, and inspire a love for nature in them.</p>
-                      </div>
-                      <div class="card-footer text-center">
-                        <a href="details-d3-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                      </div>
-                    </div>
-                  </div>
-                
-                  <div class="col-12 col-md-4 mb-3">
-                    <div class="card blue">
-                      <img class="img-fluid" src="./assets/images/offers/thumb-team.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">TEAM EXPERIENCE</h4>
-                        <p class="card-text">Looking to boost team spirit, improve teamwork, and build positive energy in a relaxed, natural setting?</p>
-                      </div>
-                      <div class="card-footer text-center">
-                        <a href="details-d4-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-                  <div class="row" id="ofr">
-                      
-                      <div class="col-12 d-flex justify-content-center">
-                          <a class="btn btn-primary mb-3 mr-1" 
-                            href="#carouselIndicators"
-                            role="button"
-                            data-slide="prev">
-                              <i class="fa fa-arrow-left"></i>
-                          </a>
-                          <a class="btn btn-primary mb-3"
-                            href="#carouselIndicators"
-                            role="button"
-                            data-slide="next">
-                              <i class="fa fa-arrow-right"></i>
-                          </a>
-                      </div>
-
-                      <div class="col-12 mnh650">
-                          <div id="carouselIndicators" 
-                               class="carousel slide"
-                               data-ride="carousel">
-      
-                              <div class="carousel-inner carousel-inner-sm">
-                                  
-                                  <div class="carousel-item ha active">
-                                      <div class="row">
-      
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card blue">
-                                                <img class="img-fluid" src="./assets/images/offers/thumb-individual.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">SOLO ADVENTURE</h4>
-                                                    <p class="card-text">A forest adventure awaits all the young and young at heart — with bridges, ladders, nets, ropes, wires...</p>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="details-d5-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card blue">
-                                                <img class="img-fluid" src="./assets/images/offers/thumb-family.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">FAMILY ADVENTURE</h4>
-                                                    <p class="card-text">Adventure Park Postojna offers the perfect setting for your kids to test their skills and creativity.</p>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="details-d1-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card blue">
-                                                <img class="img-fluid" src="./assets/images/offers/thumb-bday.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">BIRTHDAY ADVENTURE</h4>
-                                                    <p class="card-text">Want to give your child and their friends a truly special gift?</p>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="details-d2-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      
-      
-                                      </div>
-                                  </div>
-                                  <div class="carousel-item ha">
-                                      <div class="row">
-      
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card blue">
-                                                <img class="img-fluid" src="./assets/images/offers/thumb-school.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">ADVENTURE SPORTS DAY</h4>
-                                                    <p class="card-text">Delight school children with a fun, educational, and safe adventure, and inspire a love for nature in them.</p>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="details-d3-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card blue">
-                                                <img class="img-fluid" src="./assets/images/offers/thumb-team.jpg">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">TEAM EXPERIENCE</h4>
-                                                    <p class="card-text">Looking to boost team spirit, improve teamwork, and build positive energy in a relaxed, natural setting?</p>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="details-d4-en.html"><button class="btn btn-primary w-100">More about the offer</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-      
-                      <div class="col-12 d-flex justify-content-center">
-                          <a class="btn btn-primary mb-3 mr-1" 
-                             href="#carouselIndicators"
-                             role="button"
-                             data-slide="prev">
-                              <i class="fa fa-arrow-left"></i>
-                          </a>
-                          <a class="btn btn-primary mb-3"
-                             href="#carouselIndicators"
-                             role="button"
-                             data-slide="next">
-                              <i class="fa fa-arrow-right"></i>
-                          </a>
-                      </div>
-                      
-                  </div>
-              </div>
-              <div class="spacer"></div>
-          </section>
-
-          </div>
-          
-        </div>
-
-
-    <!-- End of Content
-    ================================================== -->
-
-
-
-    <div id="C6" class="spacer"></div>
-    <div class="container mt-5 marketing">
-      <h1 class="display-4">Pricing</h1>
-
-      <h3 class="mb-4">SEASON 2024</h3>
-
-      <ul class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>Children up to 7 years</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>14€</strong></p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>Children up to 14 years</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>18€</strong></p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>Adults</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>20€</strong></p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>Family - 2 Adults + 1 Child</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>50€</strong></p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-date">
-            <span>Family - 2 Adults + 2 Children</span>
-          </div>
-          <div class="timeline-details">
-            <p><strong>65€</strong></p>
-          </div>
-        </li>
-      </ul>
-
-      <hr class="featurette-divider">
-
-      <h3 class="mb-4">Sports Day?</h3>
-      <p>Organize a great adventure day for school groups!</p>
-      <a href="details-d3.html#C1" class="btn btn-primary orange">View pricing</a>
-
-      <!-- Gift Voucher Section -->
-      <hr class="featurette-divider">
-      <div class="gift-voucher-section mt-5">
-        <h3 class="mb-4">Looking for the perfect gift?</h3>
-        <p>Give a gift voucher to your loved ones and allow them to enjoy our services whenever it suits them. Click the link below to order your gift voucher today!</p>
-        <a href="form.html" class="btn btn-primary orange">Order gift voucher</a>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- Weather conditions description -->
-      <p class="mt-4 white">
-        PRIOR NOTICE FOR GROUPS OF LESS THAN 10 PARTICIPANTS IS NOT REQUIRED! Payment is only possible in cash.
-        <br><br>
-        The entrance fee is not time-limited. In case of a large number of visitors, we may ask you to complete your adventure after 3 hours.
-        <br>Accompanying persons, walkers, curious visitors, and dogs do not pay the entrance fee.
-        
-        <br><br>
-        The minimum height for children, with arms extended above their heads, is 140 cm.
-        <br>
-        Children under 16 must be accompanied by an adult in the adventure park!
-        <br>1 adult can accompany up to 3 children!
-        <br>We recommend wearing sports shoes and clothes.
-
-        <br><br>
-        Prices are subject to change without prior notice.
-      </p>
-    </div>
-    <div class="spacer"></div>
-
-
-
-    <!-- Contacts
-    ================================================== -->
-    <section class="light">
-    <div id="C4" class="spacer light"></div>
-    <div class="container marketing light">  
-        <div class="spacer"></div>
-        
     
-        <div class="row featurette">
-          <div class="col-md-5">
-            <h2 class="featurette-heading" style="margin-top:0px;"><span class="pink">Get in Touch with Us</span></h2>
-
-            <ul class="list-group list-group-flush borderless">
-              <li class="list-group-item">
-                <div class="col-1 float-left pl-1">
-                  <i class="fa fa-mobile-alt"></i>
-                </div>
-                <p>+386 40 567 046</p>
-
-              </li>
-              <li class="list-group-item">
-                <div class="col-1 float-left pl-1">
-                  <i class="fas fa-at"></i>
-                </div>
-                <p>info@pustolovski-park-postojna.si</p>
-              </li>
-              <li class="list-group-item">
-                <div class="col-1 float-left pl-1">
-                  <i class="fab fa-facebook"></i>
-                </div>
-                <p><a href="https://www.facebook.com/zipline" target="_blank">@zipline</a></p>
-              </li>
-              <li class="list-group-item">
-                <div class="col-1 float-left pl-1">
-                  <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <p>Naslov 12, 4000 Kranj</p>
-              </li>
-            </ul>
-
-          </div>
-          <div class="col-md-7">
-            <!--Google map-->
-            <div id="map-container-google-1" class="z-depth-1-half map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.4091712429795!2d14.199335575103747!3d45.78302979193399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b31e1cd708b2b%3A0x8d4720fffb2d02be!2sPostojna%20Cave!5e0!3m2!1sen!2ssi!4v1739816257238!5m2!1sen!2ssi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <!--Google Maps-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <h1 class="display-4">Offer</h1>
+              <p class="lead text-justify">
+                POSTOJNA ADVENTURE PARK offers you a unique, primal, and exciting walk among the treetops, where you will test your ingenuity, adventurous spirit, and experience a truly special day.
+              </p>
           </div>
         </div>
+      </div>
+    
+      <section class="orange">
+        <!-- Outer Container to wrap the rows -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- First Row of Cards -->
+            <div class="col-12">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-individual.jpg" alt="INDIVIDUAL ADVENTURE">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">INDIVIDUAL ADVENTURE</h4>
+                      <p class="card-text">A forest adventure awaits all young and young-at-heart, consisting of bridges, ladders, nets, ropes, and wires...</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-d5-en.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-family.jpg" alt="FAMILY ADVENTURE">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">FAMILY ADVENTURE</h4>
+                      <p class="card-text">Postojna Adventure Park offers an excellent location for testing your children’s skills and ingenuity.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-d1-en.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-bday.jpg" alt="BIRTHDAY ADVENTURE">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">BIRTHDAY ADVENTURE</h4>
+                      <p class="card-text">Do you want to give your child and their friends a truly special gift?</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-d2-en.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Second Row of Cards -->
+            <div class="col-12">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-school.jpg" alt="ADVENTURE-SPORT DAY">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">ADVENTURE-SPORT DAY</h4>
+                      <p class="card-text">Delight schoolchildren with an educational and safe adventure and awaken their love for nature.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-d3-en.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-team.jpg" alt="TUNED TEAM OF ADVENTURERS">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">TUNED TEAM OF ADVENTURERS</h4>
+                      <p class="card-text">Do you want to strengthen team spirit, teamwork skills, and connecting energy in a joyful outdoor atmosphere?</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-d4-en.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- New additional card at the end -->
+                <div class="col-md-4 mb-3">
+                  <div class="card blue">
+                    <img class="card-img-top" src="./assets/images/offers/thumb-team.jpg" alt="GIFT VOUCHER">
+                    <div class="card-body text-center">
+                      <h4 class="card-title">GIFT VOUCHER</h4>
+                      <p class="card-text">Looking for the perfect gift? Click the link below and order your gift voucher today!</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="details-new.html" class="btn btn-primary w-100">More about the offer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="spacer"></div>
     </div>
-    <div id="C4" class="spacer light"></div>
-  </section>
+
+    <section class="light">
+      <div id="C4" class="spacer light"></div>
+      <div class="container marketing light">  
+          <div class="spacer"></div>
+          
+          <div class="row featurette">
+            <div class="col-md-5">
+              <h2 class="featurette-heading" style="margin-top:0px;">
+                <span class="pink">Get in Touch with Us</span>
+              </h2>
+          
+              <ul class="list-group list-group-flush border-0">
+                <li class="list-group-item d-flex align-items-center border-0">
+                  <div class="col-1 d-flex justify-content-center pe-2">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <p class="mt-auto mb-auto">+386 69 696 539</p>
+                </li>
+                <li class="list-group-item d-flex align-items-center border-0">
+                  <div class="col-1 d-flex justify-content-center pe-2">
+                    <i class="fas fa-at"></i>
+                  </div>
+                  <p class="mt-auto mb-auto">info@pustolovski-park-postojna.si</p>
+                </li>
+                <li class="list-group-item d-flex align-items-center border-0">
+                  <div class="col-1 d-flex justify-content-center pe-2">
+                    <i class="fab fa-facebook"></i>
+                  </div>
+                  <p class="mt-auto mb-auto">
+                    <a href="https://www.facebook.com/PustolovskiParkPostojna" target="_blank">@PustolovskiParkPostojna</a>
+                  </p>
+                </li>
+                <li class="list-group-item d-flex align-items-center border-0">
+                  <div class="col-1 d-flex justify-content-center pe-2">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <p class="mt-auto mb-auto">
+                    <a href="https://www.instagram.com/pustolovskiparkpostojna/" target="_blank">@pustolovskiparkpostojna</a>
+                  </p>
+                </li>
+                <li class="list-group-item d-flex align-items-center border-0">
+                  <div class="col-1 d-flex justify-content-center pe-2">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </div>
+                  <p class="mt-auto mb-auto">Jamska cesta, 6230 Postojna</p>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="col-md-7">
+              <!-- Google map -->
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EywejZNo6zl6JvAlNow0JcveNXVrEUE&ehbc=2E312F&noprof=1&center=45.78034,14.2062&zoom=18" 
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  style="border:0; margin-top: -60px;">
+                </iframe>
+              </div>
+              <!-- Google Maps -->
+            </div>
+          </div>
+      </div>
+      <div id="C4" class="spacer light"></div>
+    </section>
+    
     <!-- End of Contacts
     ================================================== -->
 
@@ -652,29 +646,31 @@
     ================================================== -->
 
     <footer class="text-muted">
-        <div class="container">
-            <div class="col-auto float-left">
-                <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 45 35" focusable="false">
-                <small class="d-block mb-3 white">&copy; 2025 - all rights reserved</small>
-            </div>
-    
-            <div class="col-auto float-right">
-                <p class="float-right">
-                    <a href="#">Back to top</a>
-                </p>
-            </div>
-            <div class='clear'></div>
-        </div>
-    
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Terms and Conditions</a></li>
-                    <li class="list-inline-item"><a href="rules.html">Rules</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                  <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block" role="img" viewBox="0 0 45 35" focusable="false">
+                  <small class="ms-3 text-white">&copy; 2025 - all rights reserved</small>
+              </div>
+              
+              <div>
+                  <p class="mb-0">
+                      <a href="#">Back to top</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container">
+          <div class="d-flex justify-content-center">
+              <ul class="list-inline mb-0">
+                  <li class="list-inline-item"><a href="#">Terms and Conditions</a></li>
+                  <li class="list-inline-item"><a href="rules-en.html">Rules</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+
   
 
     <!-- End of Footer
@@ -686,8 +682,8 @@
     <script src="./js/jquery.min.js"></script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
-     <script src="./js/popper.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.js"></script>
     <script src="./js/holder.min.js"></script>
     <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -703,6 +699,54 @@
         fg: '#eceeef',
         text: 'Thumbnail'
       });
+
+      // Function to read query parameter
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+
+      // Run on page load
+      window.addEventListener('DOMContentLoaded', () => {
+        // Get the 'tab' query parameter
+        const tabIdFromQuery = getQueryParam('tab');
+        if (tabIdFromQuery) {
+          // If 'tab' query param exists, activate the corresponding tab
+          activateTab(tabIdFromQuery);
+        }
+      });
+
+      function activateTab(tabId) {
+        const tabTrigger = document.querySelector(`#${tabId}-tab`);
+        if (tabTrigger) {
+          // Bootstrap 5 method to show a tab
+          const tab = new bootstrap.Tab(tabTrigger);
+          tab.show();
+        }
+      }
+
+      const messages = [
+        "Do you want an unforgettable experience in the embrace of nature?",
+        "A day full of adventures, laughter, and fun?",
+        "Fun with friends, family, or colleagues?"
+      ];
+
+      const textElement = document.getElementById("text");
+      let index = 0;
+
+      function showNextMessage() {
+        textElement.classList.add('fade-in');
+        textElement.textContent = messages[index];
+
+        setTimeout(() => {
+          textElement.classList.remove('fade-in');
+          index = (index + 1) % messages.length; // Loop back to 0
+          setTimeout(showNextMessage, 1000); // Wait for fade-out before next
+        }, 3000); // Show for 3 seconds
+      }
+
+      showNextMessage();
     </script>
 </body>
 </html>
