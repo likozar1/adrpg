@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="./assets/favicon/icon.png" type="image/png">
+    <link rel="icon" href="./assets/favicon/icon.png?v=1" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 
-    <title>Plezalne poti</title>
+    <title>Adventure Park</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/slick.css" rel="stylesheet">
@@ -19,13 +19,14 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="./css/site/nav.css" rel="stylesheet">
-    <link href="./css/site/headline.css" rel="stylesheet">
-    <link href="./css/site/comments.css" rel="stylesheet">
-    <link href="./css/site/content.css" rel="stylesheet">
-    <link href="./css/site/pricing.css" rel="stylesheet">
-    <link href="./css/site/footer.css" rel="stylesheet">
-    <link href="./css/site/details.css" rel="stylesheet">
+<link href="./css/site/nav.css?t=20250708" rel="stylesheet">
+<link href="./css/site/headline.css?t=20250708" rel="stylesheet">
+<link href="./css/site/comments.css?t=20250708" rel="stylesheet">
+<link href="./css/site/content.css?t=20250708" rel="stylesheet">
+<link href="./css/site/pricing.css?t=20250708" rel="stylesheet">
+<link href="./css/site/footer.css?t=20250708" rel="stylesheet">
+<link href="./css/site/details.css?t=20250708" rel="stylesheet">
+
 
   </head>
 
@@ -118,10 +119,11 @@
                   <div class="d-flex align-items-center">
                       <select class="form-control voucher-selector" id="voucher1" required>
                           <option value="">Select a gift voucher</option>
-                          <option value="10">10 EUR</option>
-                          <option value="20">20 EUR</option>
-                          <option value="50">50 EUR</option>
-                          <option value="100">100 EUR</option>
+                          <option value="child_up_to_7">Child up to 7 years</option>
+                          <option value="child_up_to_14">Child up to 14 years</option>
+                          <option value="adult">Adult</option>
+                          <option value="family_2_adults_1_child">Family 2 adults + 1 child</option>
+                          <option value="family_2_adults_2_children">Family 2 adults + 2 children</option>
                       </select>
                       <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
                   </div>
@@ -173,7 +175,7 @@
       <div class="container">
           <div class="d-flex justify-content-center">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#">General Terms</a></li>
+                  
                   <li class="list-inline-item"><a href="rules-en.html">Rules</a></li>
               </ul>
           </div>
@@ -216,10 +218,11 @@
           // Add options to the select element
           newVoucherSelect.innerHTML = `
               <option value="">Select a gift voucher</option>
-              <option value="10">10 EUR</option>
-              <option value="20">20 EUR</option>
-              <option value="50">50 EUR</option>
-              <option value="100">100 EUR</option>
+              <option value="child_up_to_7">Child up to 7 years</option>
+              <option value="child_up_to_14">Child up to 14 years</option>
+              <option value="adult">Adult</option>
+              <option value="family_2_adults_1_child">Family 2 adults + 1 child</option>
+              <option value="family_2_adults_2_children">Family 2 adults + 2 children</option>
           `;
   
           // Create the new remove button
