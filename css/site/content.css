@@ -7,21 +7,50 @@ body {
   background-color: rgb(28, 122, 195);
 }
 
+.numbered-paragraph {
+  position: relative;
+  padding-left: 45px; /* space for the number */
+  margin-bottom: 1em;
+}
+.numbered-paragraph::before {
+  content: counter(paragraph) ".";
+  counter-increment: paragraph;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.pricing-header {
+  counter-reset: paragraph; /* reset counter inside this container */
+}
+
 .timeline {
   list-style: none;
   padding-left: 0;
 }
 .timeline-item {
-  border-left: 3px solid black;
+  border-left: 3px solid rgb(131, 97, 55);
   margin-bottom: 20px;
   padding-left: 15px;
 }
+.timeline-item.white-border {
+  border-left: 4px solid rgb(66, 40, 8);
+  padding-left: 1rem;
+}
+
+.timeline-item h3 {
+  color: rgb(66, 40, 8) !important;
+}
+
 .timeline-date {
   font-weight: bold;
-  color: black;
+  color: rgb(66, 40, 8);
 }
 .timeline-details {
   margin-top: 5px;
+  color: rgb(105, 74, 37);
 }
 
 /* CUSTOMIZE THE CAROUSEL
