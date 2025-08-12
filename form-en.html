@@ -3,8 +3,15 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Experience thrilling outdoor adventures near Postojna Cave, Slovenia! Zipline, climbing, adrenaline park activities for families, friends, and groups. Book your adventure today!">
+    <meta name="keywords" content="Adventure park Postojna, Zipline Slovenia, Climbing park near Postojna Cave, Adrenaline park Slovenia, Outdoor fun Slovenia, Family adventure Slovenia, High ropes course Slovenia, Zipline Postojna, Outdoor activities Slovenia, Pustolovski park Postojna">
     <meta name="author" content="">
+
+    <meta property="og:title" content="Adventure park Postojna" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://pustolovski-park-postojna.si/assets/logo/logo-d.png" />
+    <meta property="og:url" content="https://pustolovski-park-postojna.si/index-en.html" />
+
     <link rel="icon" href="./assets/favicon/icon.png?v=1" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -12,9 +19,7 @@
 
     <title>Adventure Park</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/slick.css" rel="stylesheet">
-    <link href="./css/slick-theme.css" rel="stylesheet">
+
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -37,7 +42,8 @@
     <nav class="fixed-top navbar navbar-expand-lg nav-transparent-invert navbar-light">
       <div class="container">
         <a class="py-2 navbar-brand" href="index-en.html">
-          <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 35 35" focusable="false">
+          <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" alt="Park logo">
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -98,52 +104,51 @@
   
   <div class="row featurette">
       <div class="col-12 col-md-8 mx-auto">
-          <form>
+          <form method="POST" action="send_form_en.php">
               <div class="mb-3">
                   <label for="name" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
               </div>
-  
+          
               <div class="mb-3">
                   <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
               </div>
-  
+          
               <div class="mb-3">
                   <label for="phone" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
               </div>
-  
+          
               <div class="mb-3" id="voucherGroup">
                   <label for="voucher1" class="form-label">Gift Voucher</label>
                   <div class="d-flex align-items-center">
-                      <select class="form-control voucher-selector" id="voucher1" required>
+                      <select class="form-control voucher-selector" id="voucher1" name="vouchers[]" required>
                           <option value="">Select a gift voucher</option>
-                          <option value="child_up_to_7">Child up to 7 years</option>
-                          <option value="child_up_to_14">Child up to 14 years</option>
-                          <option value="adult">Adult</option>
-                          <option value="family_2_adults_1_child">Family 2 adults + 1 child</option>
-                          <option value="family_2_adults_2_children">Family 2 adults + 2 children</option>
+                          <option value="otrok_do_7">Child up to 7 years</option>
+                          <option value="otroska_do_14">Child up to 14 years</option>
+                          <option value="odrasla">Adult</option>
+                          <option value="druzinska_2odrasla_1otrok">Family 2 adults + 1 child</option>
+                          <option value="druzinska_2odrasla_2otrok">Family 2 adults + 2 children</option>
                       </select>
                       <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
                   </div>
               </div>
-  
+          
               <button type="button" class="btn btn-secondary" id="addVoucherBtn">Add Another Gift Voucher</button>
-  
+          
               <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
               </div>
-  
-              <!-- Terms and Conditions Checkbox -->
+          
               <div class="form-check mb-3">
-                  <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                  <input type="checkbox" class="form-check-input" id="termsCheck" name="termsCheck" required>
                   <label class="form-check-label" for="termsCheck">I accept the terms of use</label>
               </div>
-  
+          
               <button type="submit" class="btn btn-primary orange">Order</button>
-          </form>
+          </form> 
       </div>
   </div>  
 
@@ -195,7 +200,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/holder.min.js"></script>
     <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="./js/comments.js"></script>
     <script src="./js/adrenalin.js"></script>
 
@@ -207,22 +212,23 @@
   
           // Create a new div element for the new voucher
           const newVoucherDiv = document.createElement('div');
-          newVoucherDiv.classList.add('d-flex', 'align-items-center');
+          newVoucherDiv.classList.add('d-flex', 'align-items-center', 'mt-2');
           
           // Create the new select element for voucher selection
           const newVoucherSelect = document.createElement('select');
           newVoucherSelect.classList.add('form-control', 'voucher-selector');
           newVoucherSelect.setAttribute('id', 'voucher' + voucherCounter);
+          newVoucherSelect.setAttribute('name', 'vouchers[]'); // Ensure proper name for form submission
           newVoucherSelect.required = true;
   
           // Add options to the select element
           newVoucherSelect.innerHTML = `
               <option value="">Select a gift voucher</option>
-              <option value="child_up_to_7">Child up to 7 years</option>
-              <option value="child_up_to_14">Child up to 14 years</option>
-              <option value="adult">Adult</option>
-              <option value="family_2_adults_1_child">Family 2 adults + 1 child</option>
-              <option value="family_2_adults_2_children">Family 2 adults + 2 children</option>
+              <option value="otrok_do_7">Child up to 7 years</option>
+              <option value="otroska_do_14">Child up to 14 years</option>
+              <option value="odrasla">Adult</option>
+              <option value="druzinska_2odrasla_1otrok">Family 2 adults + 1 child</option>
+              <option value="druzinska_2odrasla_2otrok">Family 2 adults + 2 children</option>
           `;
   
           // Create the new remove button
@@ -230,7 +236,9 @@
           removeBtn.type = 'button';
           removeBtn.classList.add('btn', 'btn-danger', 'ms-2');
           removeBtn.textContent = 'X';
-          removeBtn.setAttribute('onclick', 'removeVoucher(this)');
+          removeBtn.addEventListener('click', function () {
+              newVoucherDiv.remove();
+          });
           
           // Append the select and remove button to the new div
           newVoucherDiv.appendChild(newVoucherSelect);

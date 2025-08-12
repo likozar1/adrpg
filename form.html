@@ -3,8 +3,16 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Dobrodošli v Pustolovskem parku Postojna – vznemirljive pustolovščine v naravi blizu Postojnske jame! Zipline, plezanje, adrenalinski park za družine, prijatelje in skupine. Rezervirajte svojo avanturo še danes!">
+    <meta name="keywords" content="Pustolovski park Postojna, Zipline Slovenija, Plezalni park pri Postojnski jami, Adrenalinski park Slovenija, Zabava na prostem Slovenija, Družinske avanture Slovenija, Visok vrvni park Slovenija, Zipline Postojna, Aktivnosti v naravi Slovenija, Avanture blizu Postojnske jame">
+    
     <meta name="author" content="">
+
+    <meta property="og:title" content="Pustolovski park Postojna" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://pustolovski-park-postojna.si/assets/logo/logo-d.png" />
+    <meta property="og:url" content="https://pustolovski-park-postojna.si" />
+
     <link rel="icon" href="./assets/favicon/icon.png?v=1" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -12,9 +20,7 @@
 
     <title>Pustolovski Park</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/slick.css" rel="stylesheet">
-    <link href="./css/slick-theme.css" rel="stylesheet">
+
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -37,7 +43,8 @@
     <nav class="fixed-top navbar navbar-expand-lg nav-transparent-invert navbar-light">
       <div class="container">
         <a class="py-2 navbar-brand" href="index.html">
-          <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" viewBox="0 0 35 35" focusable="false">
+          <img src="./assets/logo/logo-w.png" width="45" height="45" class="d-block mx-auto" role="img" alt="Park logo">
+
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -98,52 +105,51 @@
   
       <div class="row featurette">
           <div class="col-12 col-md-8 mx-auto">
-              <form>
+              <form method="POST" action="send_form.php">
                   <div class="mb-3">
                       <label for="name" class="form-label">Ime in Priimek</label>
-                      <input type="text" class="form-control" id="name" placeholder="Vnesite vaše ime in priimek" required>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Vnesite vaše ime in priimek" required>
                   </div>
-  
+              
                   <div class="mb-3">
                       <label for="email" class="form-label">Email naslov</label>
-                      <input type="email" class="form-control" id="email" placeholder="Vnesite vaš email" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Vnesite vaš email" required>
                   </div>
-  
+              
                   <div class="mb-3">
                       <label for="phone" class="form-label">Telefonska številka</label>
-                      <input type="tel" class="form-control" id="phone" placeholder="Vnesite vašo telefonsko številko" required>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Vnesite vašo telefonsko številko" required>
                   </div>
-
+              
                   <div class="mb-3" id="voucherGroup">
-                    <label for="voucher1" class="form-label">Darilni bon</label>
-                    <div class="d-flex align-items-center">
-                        <select class="form-control voucher-selector" id="voucher1" required>
-                            <option value="">Izberite darilni bon</option>
-                            <option value="otrok_do_7">Otrok do 7 let</option>
-                            <option value="otroska_do_14">Otroška do 14 let</option>
-                            <option value="odrasla">Odrasla</option>
-                            <option value="druzinska_2odrasla_1otrok">Družinska 2 odrasla + 1 otrok</option>
-                            <option value="druzinska_2odrasla_2otrok">Družinska 2 odrasla + 2 otroka</option>
-                        </select>
-                        <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
-                    </div>
+                      <label for="voucher1" class="form-label">Darilni bon</label>
+                      <div class="d-flex align-items-center">
+                          <select class="form-control voucher-selector" id="voucher1" name="vouchers[]" required>
+                              <option value="">Izberite darilni bon</option>
+                              <option value="otrok_do_7">Otrok do 7 let</option>
+                              <option value="otroska_do_14">Otroška do 14 let</option>
+                              <option value="odrasla">Odrasla</option>
+                              <option value="druzinska_2odrasla_1otrok">Družinska 2 odrasla + 1 otrok</option>
+                              <option value="druzinska_2odrasla_2otrok">Družinska 2 odrasla + 2 otroka</option>
+                          </select>
+                          <button type="button" class="btn btn-danger ms-2" onclick="removeVoucher(this)" disabled>X</button>
+                      </div>
                   </div>
-
+              
                   <button type="button" class="btn btn-secondary" id="addVoucherBtn">Dodaj še en darilni bon</button>
-
+                
                   <div class="mb-3">
                       <label for="message" class="form-label">Sporočilo</label>
-                      <textarea class="form-control" id="message" rows="4" placeholder="Vnesite vaše sporočilo"></textarea>
+                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Vnesite vaše sporočilo"></textarea>
                   </div>
-
-                  <!-- Terms and Conditions Checkbox -->
+                
                   <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
-                    <label class="form-check-label" for="termsCheck">Sprejemam pogoje uporabe</label>
+                      <input type="checkbox" class="form-check-input" id="termsCheck" name="termsCheck" required>
+                      <label class="form-check-label" for="termsCheck">Sprejemam pogoje uporabe</label>
                   </div>
-  
+              
                   <button type="submit" class="btn btn-primary orange">Naroči</button>
-              </form>
+              </form>            
           </div>
       </div>  
 
@@ -195,26 +201,27 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/holder.min.js"></script>
     <script src="./js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="./js/comments.js"></script>
     <script src="./js/adrenalin.js"></script>
 
     <script>
       let voucherCounter = 1; // Start voucher counter
-  
+    
       document.getElementById('addVoucherBtn').addEventListener('click', function () {
-          voucherCounter++; // Increment counter for the new voucher input
-  
-          // Create a new div element for the new voucher
+          voucherCounter++; // Increment counter for new voucher input
+    
+          // Create a new wrapper div
           const newVoucherDiv = document.createElement('div');
-          newVoucherDiv.classList.add('d-flex', 'align-items-center');
-          
-          // Create the new select element for voucher selection
+          newVoucherDiv.classList.add('d-flex', 'align-items-center', 'mt-2');
+    
+          // Create new select element for voucher selection
           const newVoucherSelect = document.createElement('select');
           newVoucherSelect.classList.add('form-control', 'voucher-selector');
           newVoucherSelect.setAttribute('id', 'voucher' + voucherCounter);
+          newVoucherSelect.setAttribute('name', 'vouchers[]'); // Ensure proper name for form submission
           newVoucherSelect.required = true;
-  
+    
           // Add options to the select element
           newVoucherSelect.innerHTML = `
               <option value="">Izberite darilni bon</option>
@@ -224,27 +231,29 @@
               <option value="druzinska_2odrasla_1otrok">Družinska 2 odrasla + 1 otrok</option>
               <option value="druzinska_2odrasla_2otrok">Družinska 2 odrasla + 2 otroka</option>
           `;
-  
-          // Create the new remove button
+    
+          // Create the remove button
           const removeBtn = document.createElement('button');
           removeBtn.type = 'button';
           removeBtn.classList.add('btn', 'btn-danger', 'ms-2');
           removeBtn.textContent = 'X';
-          removeBtn.setAttribute('onclick', 'removeVoucher(this)');
-          
-          // Append the select and remove button to the new div
+          removeBtn.addEventListener('click', function () {
+              newVoucherDiv.remove();
+          });
+    
+          // Append select and button to the wrapper div
           newVoucherDiv.appendChild(newVoucherSelect);
           newVoucherDiv.appendChild(removeBtn);
-  
-          // Append the new voucher div to the voucher group container
+    
+          // Append to voucher group
           document.getElementById('voucherGroup').appendChild(newVoucherDiv);
       });
-  
-      // Function to remove the voucher
+    
+      // Function still needed for the first voucher's remove button (if ever enabled)
       function removeVoucher(button) {
           const voucherDiv = button.parentElement;
           voucherDiv.remove();
       }
-  </script>
+    </script>    
 </body>
 </html>

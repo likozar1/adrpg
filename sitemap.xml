@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html"/>
+
+    <!-- Videos Slovenian -->
+    <video:video>
+      <video:thumbnail_loc>https://pustolovski-park-postojna.si/assets/videos/adrenalin-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Adrenalinska pustolovščina v pustolovskem parku</video:title>
+      <video:description>Doživite vznemirljivo pustolovščino v Pustolovskem parku Postojna.</video:description>
+      <video:content_loc>https://pustolovski-park-postojna.si/assets/videos/adrenalin.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2025-06-20T10:00:00+00:00</video:publication_date>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://pustolovski-park-postojna.si/assets/videos/kong-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Kong CouDuo Pro varnostni sistem v akciji</video:title>
+      <video:description>Uporabljamo varnostni sistem CouDuo Pro podjetja Kong, ki deluje brez potrebe po odpenjanju, s čimer odpravi uporabniške napake ali malomarnost. Oglejte si, kako obiskovalci varno in samozavestno plezajo v Pustolovskem parku.</video:description>
+      <video:content_loc>https://pustolovski-park-postojna.si/assets/videos/kong.mp4</video:content_loc>
+      <video:duration>45</video:duration>
+      <video:publication_date>2025-06-25T10:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Homepage English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html"/>
+
+    <!-- Videos English -->
+    <video:video>
+      <video:thumbnail_loc>https://pustolovski-park-postojna.si/assets/videos/adrenalin-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Adrenaline Adventure at Pustolovski Park</video:title>
+      <video:description>Experience a thrilling adventure at Pustolovski Park in Postojna.</video:description>
+      <video:content_loc>https://pustolovski-park-postojna.si/assets/videos/adrenalin.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2025-06-20T10:00:00+00:00</video:publication_date>
+    </video:video>
+
+    <video:video>
+      <video:thumbnail_loc>https://pustolovski-park-postojna.si/assets/videos/kong-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Kong CouDuo Pro Safety System in Action</video:title>
+      <video:description>We use the CouDuo Pro safety system by Kong, which functions without the need to unclip, eliminating user error or negligence. See how visitors climb safely and confidently at Pustolovski Park.</video:description>
+      <video:content_loc>https://pustolovski-park-postojna.si/assets/videos/kong.mp4</video:content_loc>
+      <video:duration>45</video:duration>
+      <video:publication_date>2025-06-25T10:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- #C1 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html#C1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C1"/>
+  </url>
+
+  <!-- #C1 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html#C1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C1"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C1"/>
+  </url>
+
+  <!-- #C2 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html#C2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C2"/>
+  </url>
+
+  <!-- #C2 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html#C2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C2"/>
+  </url>
+
+  <!-- Rules Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/rules.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/rules.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/rules-en.html"/>
+  </url>
+
+  <!-- Rules English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/rules-en.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/rules.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/rules-en.html"/>
+  </url>
+
+  <!-- Odpiralni tab Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html?tab=odpiralni#C6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html?tab=odpiralni#C6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html?tab=odpiralni#C6"/>
+  </url>
+
+  <!-- Odpiralni tab English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html?tab=odpiralni#C6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html?tab=odpiralni#C6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html?tab=odpiralni#C6"/>
+  </url>
+
+  <!-- Cenik tab Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html?tab=cenik#C6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html?tab=cenik#C6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html?tab=cenik#C6"/>
+  </url>
+
+  <!-- Cenik tab English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html?tab=cenik#C6</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html?tab=cenik#C6"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html?tab=cenik#C6"/>
+  </url>
+
+  <!-- #C4 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index.html#C4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C4"/>
+  </url>
+
+  <!-- #C4 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/index-en.html#C4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/index.html#C4"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/index-en.html#C4"/>
+  </url>
+
+  <!-- Gallery Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/gallery.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/gallery-en.html"/>
+  </url>
+
+  <!-- Gallery English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/gallery-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/gallery.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/gallery-en.html"/>
+  </url>
+
+  <!-- Details D1 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d1.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d1-en.html"/>
+  </url>
+
+  <!-- Details D1 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d1-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d1-en.html"/>
+  </url>
+
+  <!-- Details D2 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d2.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d2-en.html"/>
+  </url>
+
+  <!-- Details D2 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d2-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d2-en.html"/>
+  </url>
+
+  <!-- Details D3 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d3.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d3.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d3-en.html"/>
+  </url>
+
+  <!-- Details D3 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d3-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d3.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d3-en.html"/>
+  </url>
+
+  <!-- Details D4 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d4.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d4-en.html"/>
+  </url>
+
+  <!-- Details D4 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d4-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d4-en.html"/>
+  </url>
+
+  <!-- Details D5 Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d5.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d5-en.html"/>
+  </url>
+
+  <!-- Details D5 English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/details-d5-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/details-d5.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/details-d5-en.html"/>
+  </url>
+
+  <!-- Form Slovenian -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/form.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/form.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/form-en.html"/>
+  </url>
+
+  <!-- Form English -->
+  <url>
+    <loc>https://pustolovski-park-postojna.si/form-en.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://pustolovski-park-postojna.si/form.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pustolovski-park-postojna.si/form-en.html"/>
+  </url>
+
+
+</urlset>
